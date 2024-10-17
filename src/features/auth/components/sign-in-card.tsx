@@ -16,6 +16,7 @@ import {
 
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
+import Link from "next/link";
 
 const formSchema = z.object({
   email: z.string().email(),
@@ -106,6 +107,12 @@ export function SignIncard() {
             Login with Github
           </Button>
         </CardContent>
+        <div className="flex justify-center p-4">
+          Don&apos;t have an account ?
+          <Link href="/sign-up">
+            <span className="text-blue-700">&nbsp;Sign up</span>
+          </Link>
+        </div>
       </div>
     </Card>
   );

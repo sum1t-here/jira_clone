@@ -141,6 +141,12 @@ export function SignUpcard() {
             Login with Github
           </Button>
         </CardContent>
+        <div className="flex justify-center p-4">
+          Already have an account ?
+          <Link href="/sign-in">
+            <span className="text-blue-700">&nbsp;Sign in</span>
+          </Link>
+        </div>
       </div>
     </Card>
   );
